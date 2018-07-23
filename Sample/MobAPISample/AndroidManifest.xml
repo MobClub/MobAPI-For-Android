@@ -1,0 +1,406 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mob.mobapi.sample"
+    android:versionCode="9"
+    android:versionName="2.1.0">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mob.mobapi.sample.custom.CustomAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/custom_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.custom.CustomAPIFullManualActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/custom_api_full_manual_input"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.custom.CustomAPISemiAutomaticActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/custom_api_Semi_automatic_mode"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.weather.WeatherAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/weather_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.weather.QueryByCityNameActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/weather_by_city"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.weather.QueryByIpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/weather_by_ip"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+`
+        <activity
+            android:name="com.mob.mobapi.sample.weather.QueryTypeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/weather_query_type"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.cook.CookAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/cook_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.cook.MenuListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.postcode.PostcodeAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/postcode_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.postcode.PostcodeToAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/postcode_to_address"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.postcode.AddressToPostcodeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/address_to_postcode"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.mobile.MobileAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/mobile_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.station.StationAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/station_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.idcard.IDCardAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/idcard_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.environment.EnvironmentAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/environment_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.ipstore.IPStoreAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ipstore_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.ucache.UcacheAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.ucache.UcachePutActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api_put"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.ucache.UcacheGetActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api_get"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.ucache.UcacheGetAllActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api_getall"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".ucache.UcacheGetAllTableActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api_count"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.ucache.UcacheDelActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api_del"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".ucache.UcacheCountActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ucache_api_getall_table"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.mobilelucky.MobileLuckyAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/mobilelucky_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.bankcard.BankCardAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/bankcard_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.calendar.CalendarAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/calendar_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.laohuangli.LaoHuangLiAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/laohuangli_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.health.HealthAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/health_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.marriage.MarriageAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/marriage_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.history.HistoryAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/history_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.dream.DreamAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/dream_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.idiom.IdiomAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/idiom_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.dictionary.DictionaryAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/dictionary_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.horoscope.HoroscopeAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/horoscope_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.oilprice.OilPriceAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/oilprice_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.lottery.LotteryAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/lottery_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.wxarticle.WxArticleAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/wxarticle_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.wxarticle.WxArticleListAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.boxoffice.BoxOfficeAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/boxoffice_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.gold.GoldAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/gold_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.exchange.ExchangeAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/exchange_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.exchange.QueryRMBQuotationByBank"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/exchange_api_title_rmb_quotation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.exchange.QueryAllCurrency"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/exchange_api_title_currency"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.exchange.QueryExchangeRateByCode"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/exchange_api_title_by_code"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.exchange.QueryRealTimeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/exchange_api_title_real_time"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.globalstock.GlobalStockListAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/globalstock_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.globalstock.GlobalStockDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/globalstock_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.usercenter.UserCenterAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/usercenter_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.sliver.SliverAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/sliver_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.domesticmetal.DomesticMetalAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/domestic_metal_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.iktoken.IKTokenAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/iktoken_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.traintickets.TrainTicketsAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/train_tickets_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.flight.FlightAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/flight_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.flight.FlightCityThreeCodesAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/flight_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.tiku.TiKuAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/tiku_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.tiku.TiKuListAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.car.CarAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/tiku_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.car.CarSeriesDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.car.CarSeriesNameActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.car.CarViolationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.footballleague.FootballLeagueAPIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/footballleague_api"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.mob.mobapi.sample.footballleague.FootballLeagueRoundActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+</manifest>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffa3a3a3" />
+
+        <Button
+            android:id="@+id/btnIntegrated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/integrated_apis" />
+
+        <Button
+            android:id="@+id/btnCustomAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/custom_api" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffa3a3a3" />
+
+        <Button
+            android:id="@+id/btnWeatherAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/weather_api" />
+
+        <Button
+            android:id="@+id/btnCookAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/cook_api" />
+
+        <Button
+            android:id="@+id/btnPostcodeAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/postcode_api" />
+
+        <Button
+            android:id="@+id/btnMobileAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/mobile_api" />
+
+        <Button
+            android:id="@+id/btnStationAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/station_api" />
+
+        <Button
+            android:id="@+id/btnIDCardAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/idcard_api" />
+
+        <Button
+            android:id="@+id/btnEnvironmentAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/environment_api" />
+
+        <Button
+            android:id="@+id/btnIPStoreAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/ipstore_api" />
+
+        <Button
+            android:id="@+id/btnUcacheAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/ucache_api" />
+
+        <Button
+            android:id="@+id/btnMobileLuckyAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/mobilelucky_api" />
+
+        <Button
+            android:id="@+id/btnBankCardAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/bankcard_api" />
+
+        <Button
+            android:id="@+id/btnCalendarAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/calendar_api" />
+
+        <Button
+            android:id="@+id/btnLaoHuangLiAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/laohuangli_api" />
+
+        <Button
+            android:id="@+id/btnHealthAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/health_api" />
+
+        <Button
+            android:id="@+id/btnMarriageAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/marriage_api" />
+
+        <Button
+            android:id="@+id/btnHistoryAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/history_api" />
+
+        <Button
+            android:id="@+id/btnDreamAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/dream_api" />
+
+        <Button
+            android:id="@+id/btnIdiomAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/idiom_api" />
+
+        <Button
+            android:id="@+id/btnDictionaryAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/dictionary_api" />
+
+        <Button
+            android:id="@+id/btnHoroscopeAPI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/horoscope_api" />
+
+        <Button
+            android:id="@+id/btnOilPriceApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/oilprice_api" />
+
+        <Button
+            android:id="@+id/btnLotteryApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/lottery_api" />
+
+        <Button
+            android:id="@+id/btnWxArticleApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/wxarticle_api" />
+
+        <Button
+            android:id="@+id/btnBoxOfficeApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/boxoffice_api" />
+
+        <Button
+            android:id="@+id/btnGoldApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/gold_api" />
+
+        <Button
+            android:id="@+id/btnExchangeApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/exchange_api" />
+
+        <Button
+            android:id="@+id/btnGlobalStockApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/globalstock_api" />
+
+        <Button
+            android:id="@+id/btnUserCenterApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/usercenter_api" />
+
+        <Button
+            android:id="@+id/btnSliverApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/sliver_api" />
+
+        <Button
+            android:id="@+id/btnDomesticMetalApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/domestic_metal_api" />
+
+        <Button
+            android:id="@+id/btnIKTokenApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/iktoken_api" />
+
+        <Button
+            android:id="@+id/btnTrainTicketsApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/train_tickets_api" />
+
+        <Button
+            android:id="@+id/btnFlightApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/flight_api" />
+
+        <Button
+            android:id="@+id/btnTiKuApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/tiku_api" />
+
+        <Button
+            android:id="@+id/btnCarApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/car_api" />
+
+        <Button
+            android:id="@+id/btnCarViolationApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/car_violation" />
+
+        <Button
+            android:id="@+id/btnFootballLeagueApi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/footballleague_api" />
+    </LinearLayout>
+
+</ScrollView>
